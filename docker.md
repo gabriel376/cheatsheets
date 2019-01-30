@@ -26,7 +26,7 @@
 * List: `docker network ls`
 * Prune: `docker network prune`
 * Inspect: `docker volume inspect [volume]`
-* 
+ 
 ## Monitoring
 * Logs: `docker logs --tail [lines] -t [container]`
 * Stats: `docker stats`
