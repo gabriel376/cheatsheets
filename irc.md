@@ -1,4 +1,4 @@
-# IRC
+# IRC Cheat Sheet
 
 ## Clients
 * [hexchat](https://hexchat.github.io/)
