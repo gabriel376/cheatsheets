@@ -1,8 +1,5 @@
 # Emacs Cheat Sheet
 
-## Install
-* Debian/Ubuntu: `sudo apt-get install emacs`
-
 ## Cancel
 * Abort command: `C-g`
 * Undo: `C-/`
