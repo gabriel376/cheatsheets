@@ -3,35 +3,45 @@
 ## Movement
 
 ### Cursor
-* Left: `h`
-* Right: `l`
-* Up: `k`
-* Down: `j`
-* Top: `H`
-* Middle: `M`
-* Bottom: `L`
+| Shortcut | Description |
+| ---      | ---         |
+| `h`      | Left        |
+| `l`      | Right       |
+| `k`      | Up          |
+| `j`      | Down        |
+| `H`      | Top         |
+| `M`      | Middle      |
+| `L`      | Bottom      |
 
 ### Word
-* Previous: `b`
-* Next: `w`
+| Shortcut | Description |
+| ---      | ---         |
+| `b`      | Previous    |
+| `w`      | Next        |
 
 ### Line
-* First: `gg`
-* Last: `G`
-* Start: `0`
-* End: `$`
-* Line number 41: `41G`
+| Shortcut | Description    |
+| ---      | ---            |
+| `gg`     | First          |
+| `G`      | Last           |
+| `0`      | Start          |
+| `$`      | End            |
+| `41G`    | Line number 41 |
 
 ### Block
-* Previous: `}`
-* Next: `{`
-* To matching delimiter: `%`
+| Shortcut | Description        |
+| ---      | ---                |
+| `{`      | Previous           |
+| `}`      | Next               |
+| `%`      | Matching delimiter |
 
 ### Screen
-* Up 1 line: `Ctrl y`
-* Down 1 line: `Ctrl e`
-* Up 1/2 screen: `Ctrl u`
-* Down 1/2 screen: `Ctrl d`
-* Up 1 screen: `Ctrl f`
-* Down 1 screen: `Ctrl b`
-* Center cursor: `zz`
+| Shortcut | Description     |
+| ---      | ---             |
+| `Ctrl y` | Up 1 line       |
+| `Ctrl e` | Down 1 line     |
+| `Ctrl u` | Up 1/2 screen   |
+| `Ctrl d` | Down 1/2 screen |
+| `Ctrl f` | Up 1 screen     |
+| `Ctrl b` | Down 1 screen   |
+| `zz`     | Center cursor   |
