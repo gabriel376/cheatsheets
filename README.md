@@ -6,3 +6,4 @@
 * [GNU+Linux](https://github.com/gabriel376/cheatsheets/blob/master/gnu-linux.md)
 * [i3](https://github.com/gabriel376/cheatsheets/blob/master/i3.md)
 * [IRC](https://github.com/gabriel376/cheatsheets/blob/master/irc.md)
+* [vim](https://github.com/gabriel376/cheatsheets/blob/master/vim.md)
