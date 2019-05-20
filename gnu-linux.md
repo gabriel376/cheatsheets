@@ -1,61 +1,76 @@
 # GNU+Linux Cheat Sheet
 
-## Terminal Shortcuts
-* Clear: `CTRL L`
-* Scroll: `SHIFT [PAGE UP/DOWN]`
-* Move cursor: `CTRL [A E]`
-* Copy: `CTRL SHIFT C`
-* Paste: `CTRL SHIFT V`
-* Search command history: `CTRL R`
-* Repeat last command `!!`
-* Send SIGINT: `CTRL C`
-* Send EOF: `CTRL D`
-* Pipe STDOUT to STDIN: `[command1] | [command2]`
-* Pipe STDOUT to file: `[command] > [filename]`
-* Append STDOUT to file: `[command] >> file`
-
 ## Help
-* Command help: `[command] --help`
-* Command manual: `man [command]`
-* Command description: `whatis [command]`
-* Command location: `which [command]`
-* Command source, binary and manual: `whereis [command]`
-* Current user: `whoami`
-* Current directory: `pwd`
+```Shell
+[command] --help     # Command help
+man [command]        # Command manual
+whatis [command]     # Command description
+which [command]      # Command location
+whereis [command]    # Command related files location
+```
+
+## Shell Redirection
+```Shell
+[command] | [command]    # Pipe STDOUT to STDIN
+[command] > [file]       # Pipe STDOUT to file
+[command] >> [file]      # Append STDOUT to file
+```
 
 ## Navigation
-* Current directory: `./`
-* Parent directory: `../`
-* Change directory: `cd [path]`
+```Shell
+cd [path]    # Change directory
+cd /         # Change to root directory
+cd ..        # Change to parent directory
+cd ~         # Change to home directory
+```
 
 ## Jobs
-* Run command in background: `[command] &`
-* Stop foreground process: `CTRL z`
-* List background processes: `jobs`
-* Resume background process: `bg %[job]`
-* Resume background process in foreground: `fg %[job]`
-* Kill background process: `kill %[job]`
+```Shell
+[command] &    # Run command in background
+jobs           # List background process
+Ctrl z         # Stop foreground process
+fg %[job]      # Send job to foreground
+bg %[job]      # Send job to background
+kill %[job]    # Kill job 
+```
 
 ## Files and Directories
-* Search by name: `find [path] -iname "*[name]*"`
-* Search by content: `grep -r [path] -in -e [match]`
-* Copy: `cp -r [from] [to]`
-* Move/Rename: `mv [from] [to]`
-* Remove: `rm -rf [path]`
-* Create file or update timestamp: `touch [path]`
-* Create directory tree: `mkdir -p [path]`
-* List: `ls -lha [filter]`
-* Symbolic link: `ln -s [from] [to]`
+```Shell
+touch [path]                      # Create file
+cp [from] [to]                    # Copy file
+rm [path]                         # Remove file
 
-## Edit files
-* Nano: `nano [path]`
-* Vi: `vi [path]`
-* Vim: `vim [path]`
-* Emacs: `emacs -nw [path]`
+mkdir [path]                      # Create directory
+mkdir -p [path]                   # Create directory tree
+cp -r [from] [to]                 # Copy directory
+rm -r [path]                      # Remove directory
 
-## View files
-* Concatenate to STDIN: `cat [path1] [path2] ...`
-* First n lines: `head -n [lines] [path]`
-* Last n lines: `tail -n [lines] [path]`
-* Page: `more [path]`
-* Page with scroll: `less [path]`
+pwd                               # Print current directory
+ls [path]                         # List files and directories
+ls -lha [path]                    # List all files and directories using long format
+mv [from] [to]                    # Move or rename file or directory
+ln -s [from] [to]                 # Create symbolic link
+
+find [path] -name [pattern]       # Search file or directory by name
+grep -r [path] -n -e [pattern]    # Search files by content
+
+cat [path] [path]                 # Concatenate files
+head -n [number] [path]           # Print the first n lines
+tail -n [number] [path]           # Print the last n lines
+less [path]                       # Read file with page control
+
+/                                 # Root directory or path separator
+.                                 # Current directory
+..                                # Parent directory
+~                                 # Home directory
+
+nano [path]                       # Use nano editor
+joe [path]                        # Use joe editor
+vim [path]                        # Use vim editor
+emacs -nw [path]                  # Use emacs editor
+
+mc                                # Use mc file manager
+ranger                            # Use ranger file manager
+nnn                               # Use nnn file manager
+vifm                              # Use vifm file manager
+```
