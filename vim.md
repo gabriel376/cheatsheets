@@ -1,47 +1,34 @@
 # Vim Cheat Sheet
 
 ## Movement
+```Shell
+k            # Cursor down
+j            # Cursor up
+h            # Cursor left
+l            # Cursor right
 
-### Cursor
-| Shortcut | Description |
-| ---      | ---         |
-| `h`      | Left        |
-| `l`      | Right       |
-| `k`      | Up          |
-| `j`      | Down        |
-| `H`      | Top         |
-| `M`      | Middle      |
-| `L`      | Bottom      |
+H            # Cursor top of screen
+M            # Cursor middle of screen
+L            # Cursor bottom of screen
 
-### Word
-| Shortcut | Description |
-| ---      | ---         |
-| `b`      | Previous    |
-| `w`      | Next        |
+b            # Previous word
+w            # Next word
 
-### Line
-| Shortcut | Description    |
-| ---      | ---            |
-| `gg`     | First          |
-| `G`      | Last           |
-| `0`      | Start          |
-| `$`      | End            |
-| `41G`    | Line number 41 |
+gg           # First line of document
+G            # Last line of document
+0            # Start of current line
+$            # End of current line
+[number]G    # To line number
 
-### Block
-| Shortcut | Description        |
-| ---      | ---                |
-| `{`      | Previous           |
-| `}`      | Next               |
-| `%`      | Matching delimiter |
+{            # Previous block
+}            # Next block
+%            # Matching delimiter
 
-### Screen
-| Shortcut | Description     |
-| ---      | ---             |
-| `Ctrl y` | Up 1 line       |
-| `Ctrl e` | Down 1 line     |
-| `Ctrl u` | Up 1/2 screen   |
-| `Ctrl d` | Down 1/2 screen |
-| `Ctrl f` | Up 1 screen     |
-| `Ctrl b` | Down 1 screen   |
-| `zz`     | Center cursor   |
+Ctrl y       # Screen up 1 line
+Ctrl e       # Screen down 1 line
+Ctrl u       # Screen up 1/2 screen
+Ctrl d       # Screen down 1/2 screen
+Ctrl f       # Screen up 1 screen
+Ctrl b       # Screen down 1 screen
+zz           # Center screen
+```
