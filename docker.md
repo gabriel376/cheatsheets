@@ -2,13 +2,13 @@
 
 ## Images
 ```Shell
-docker image build        \    # build image
-    --build-arg key=value \    # Dockerfile ARG value
-    -t [name:tag]         \    # image tag
-    -f [path]                  # Dockerfile path
+docker image build        \             # build image
+    --build-arg key=value \             # Dockerfile ARG value
+    -t [name:tag]         \             # image tag
+    -f [path]                           # Dockerfile path
 
-docker image pull [name:tag]    # pull from registry
-docker image push [name:tag]    # push to registry
+docker image pull [name:tag]            # pull from registry
+docker image push [name:tag]            # push to registry
 
 docker image ls                         # list images
 docker image inspect [name:tag]         # inspect image
@@ -19,45 +19,45 @@ docker image prune                      # remove unused images
 
 ## Containers
 ```Shell
-docker container run   \    # run container
-    -p [port:port]     \    # map host port to container port
-    -v [volume:volume] \    # map container volume to host path
-    -e [key=value]     \    # environment variable
-    [name:tag]              # image name
+docker container run   \                       # run container
+    -p [port:port]     \                       # map host port to container port
+    -v [volume:volume] \                       # map container volume to host path
+    -e [key=value]     \                       # environment variable
+    [name:tag]                                 # image name
 
-docker container run \    # run container
-    --it --rm        \    # interative and remove
-    [name:tag]       \    # image name
-    [command]             # command
+docker container run \                         # run container
+    --it --rm        \                         # interative and remove
+    [name:tag]       \                         # image name
+    [command]                                  # command
 
-docker container exec \    # execute command in container
-    -w [path]         \    # working dir
-    -u [user]         \    # run as user
-    -it               \    # interative
-    [container]       \    # container image
-    [command]              # command
+docker container exec \                        # execute command in container
+    -w [path]         \                        # working dir
+    -u [user]         \                        # run as user
+    -it               \                        # interative
+    [container]       \                        # container image
+    [command]                                  # command
 
 docker container attach [container]            # attach stdin/out/err to container
 docker container cp [container:path] [path]    # copy file from container to host
 docker container rename [old] [new]            # rename container
 
-docker container start [container]      # start container
-docker container stop [container]       # stop container
-docker container restart [container]    # restart container
+docker container start [container]             # start container
+docker container stop [container]              # stop container
+docker container restart [container]           # restart container
 
-docker container pause [container]      # pause container
-docker container unpause [container]    # unpause container
+docker container pause [container]             # pause container
+docker container unpause [container]           # unpause container
 
-docker container ls                     # list containers
-docker container stats                  # monitor containers statistics
-docker container logs [container]       # see container logs
-docker container inspect [container]    # inspect container
-docker container port [container]       # see container port mappings
-docker container top [container]        # see container running processes
+docker container ls                            # list containers
+docker container stats                         # monitor containers statistics
+docker container logs [container]              # see container logs
+docker container inspect [container]           # inspect container
+docker container port [container]              # see container port mappings
+docker container top [container]               # see container running processes
 
-docker container kill [container]     # kill container
-docker container rm [container]       # remove container
-docker container prune [container]    # remove stopped containers
+docker container kill [container]              # kill container
+docker container rm [container]                # remove container
+docker container prune [container]             # remove stopped containers
 ```
 
 ## Volumes
@@ -80,40 +80,40 @@ docker network prune                               # remove unused networks
  
 ## Dockerfile
 ```Dockerfile
-# Base image
+# base image
 FROM [name:tag]
 
-# Set metadata
+# set metadata
 LABEL [key]=[value]
 
-# Add build-time argument
+# add build-time argument
 ARG [key]=[default]
 
-# Set environment variable
+# set environment variable
 ENV [key] [value]
 
-# Copy files or directories
+# copy files or directories
 COPY --chown=[user]:[group] [from] [to]
 
-# Create volume
+# create volume
 VOLUME [path]
 
-# Export port
+# export port
 EXPOSE [port]
 
-# Set user
+# set user
 USER [user]:[group]
 
-# Set working directory
+# set working directory
 WORKDIR [path]
 
-# Run command
+# run command
 RUN [command args] && [command args]
 
-# Default command
+# default command
 CMD ["command", "arg1", "arg2"]
 
-# Main command
+# main command
 ENTRYPOINT ["command", "arg1", "arg2"]
 ```
 

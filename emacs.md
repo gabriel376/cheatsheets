@@ -2,10 +2,10 @@
 
 ## Start/Quit
 ```Shell
-emacs &      # Start GUI in background
-emacs -nw    # Start in terminal mode
+emacs &      # start GUI in background
+emacs -nw    # start in terminal mode
 
-C-x C-c      # Quit
+C-x C-c      # quit
 ```
 
 ## Keys/Commands
@@ -13,98 +13,98 @@ C-x C-c      # Quit
 C                # Ctrl key
 M                # Meta (or Alt) key
 
-M-x [command]    # Execute command
-C-g              # Abort command
+M-x [command]    # execute command
+C-g              # abort command
 ```
 
 ## Help
 ```Shell
-C-h-f [command]    # Show command help
-C-h a [command]    # Show command help by matching string
-C-h k [key]        # Show command help bind to a key
-C-h t              # Start tutorial
+C-h-f [command]    # show command help
+C-h a [command]    # show command help by matching string
+C-h k [key]        # show command help bind to a key
+C-h t              # start tutorial
 ```
 
 ## Buffers
 ```Shell
-C-x C-f [path]    # Open
-C-x k [buffer]    # Kill
+C-x C-f [path]    # open
+C-x k [buffer]    # kill
 
-C-x C-s           # Save
-C-x s             # Save all
+C-x C-s           # save
+C-x s             # save all
 
-C-x b [buffer]    # Switch
-C-x C-b           # List
+C-x b [buffer]    # switch
+C-x C-b           # list
 
-C-x right         # Next
-C-x left          # Previous
+C-x right         # next
+C-x left          # previous
 ```
 
 ## Macros
 ```Shell
-C-x (    # Start
-C-x )    # End
-C-x e    # Execute
+C-x (    # start
+C-x )    # end
+C-x e    # execute
 ```
 
 ## Multiple Windows
 ```Shell
-C-x 2    # Split vertical
-C-x 3    # Split horizontal
+C-x 2    # split vertical
+C-x 3    # split horizontal
 
-C-x o    # Switch focus
-C-x 0    # Close current
-C-x 1    # Close others
+C-x o    # switch focus
+C-x 0    # close current
+C-x 1    # close others
 ```
 
 ## Navigation
 ```Shell
-M-<               # Start of buffer
-M->               # End of buffer
+M-<               # start of buffer
+M->               # end of buffer
 
-C-b               # Previous character
-C-f               # Next character
+C-b               # previous character
+C-f               # next character
 
-M-b               # Previous word
-M-f               # Next word
+M-b               # previous word
+M-f               # next word
 
-C-p               # Previous line
-C-n               # Next line
-C-a               # Start of line
-C-e               # End of line
-M-g g [number]    # Go to line number
+C-p               # previous line
+C-n               # next line
+C-a               # start of line
+C-e               # end of line
+M-g g [number]    # to line number
 
-M-v               # Previous screen
-C-v               # Next screen
-C-l               # Center screen
+M-v               # previous screen
+C-v               # next screen
+C-l               # center screen
 ```
 
 ## Mark
 ```Shell
-C-x h      # Whole buffer
-C-space    # Set mark
+C-x h      # whole buffer
+C-space    # set mark
 ```
 
 ## Search
 ```Shell
-C-r    # Search backward
-C-s    # Search forward
+C-r    # search backward
+C-s    # search forward
 ```
 
 ## Edit
 ```Shell
-C-/        # Undo
-C-g C-/    # Redo
+C-/        # undo
+C-g C-/    # redo
 ```
 
 ## Clipboard
 ```Shell
-M-w    # Copy
-C-w    # Cut
-C-y    # Yank
+M-w    # copy
+C-w    # cut
+C-y    # yank
 ```
 
 ## Shell
 ```Shell
-M-! [command]    # Run shell command
+M-! [command]    # run shell command
 ```
