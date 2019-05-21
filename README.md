@@ -8,5 +8,4 @@
 * [IRC](https://github.com/gabriel376/cheatsheets/blob/master/irc.md)
 * [LaTeX](https://github.com/gabriel376/cheatsheets/blob/master/latex.md)
 * [Package Manager](https://github.com/gabriel376/cheatsheets/blob/master/package-manager.md)
-* [Software](https://github.com/gabriel376/cheatsheets/blob/master/software.md)
 * [vim](https://github.com/gabriel376/cheatsheets/blob/master/vim.md)
