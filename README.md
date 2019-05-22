@@ -9,5 +9,6 @@
 * [IRC](https://github.com/gabriel376/cheatsheets/blob/master/irc.md)
 * [Kubernetes](https://github.com/gabriel376/cheatsheets/blob/master/kubernetes.md)
 * [LaTeX](https://github.com/gabriel376/cheatsheets/blob/master/latex.md)
+* [make](https://github.com/gabriel376/cheatsheets/blob/master/make.md)
 * [Package Manager](https://github.com/gabriel376/cheatsheets/blob/master/package-manager.md)
 * [vim](https://github.com/gabriel376/cheatsheets/blob/master/vim.md)
