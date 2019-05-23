@@ -53,7 +53,7 @@ kill %[job]    # kill job
 /usr/include           # system include files (C header files)
 /usr/lib               # essential shared libraries and kernel modules
 /usr/lib64             # essential shared libraries and kernel modules for 64-bit systems
-/usr/libexec           #  internal binaries that are not intended to be executed directly by users
+/usr/libexec           # internal binaries that are not intended to be executed directly by users
 /usr/local             # local hierarchy
 /usr/local/bin         # local binaries
 /usr/local/etc         # host-specific system configuration for local binaries
@@ -143,15 +143,15 @@ emacs -nw [path]    # use emacs
 
 ## File Managers
 ```Shell
-mc        # use mc file manager
-ranger    # use ranger file manager
-nnn       # use nnn file manager
-vifm      # use vifm file manager
+mc        # use mc
+ranger    # use ranger
+nnn       # use nnn
+vifm      # use vifm
 ```
 
 ## Search
 ```Shell
-locate [pattern]               # search file by name using indexed database
+locate [pattern]               # search file by name using mlocate.db database
 updatedb                       # update database used by locate command
 
 find [path] -name [pattern]    # search files by name in directory
