@@ -16,7 +16,7 @@ echo "# Cheat Sheets"
 echo
 
 for md in ${dir}/*.md; do
-    name=$(basename ${md})
+    name=$(basename ${md%.md})
     url="https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/${name}.md"
-    echo "* [${name%.md}](${url})"
+    echo "* [${name}](${url})"
 done
