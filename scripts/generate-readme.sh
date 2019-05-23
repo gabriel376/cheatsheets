@@ -1,10 +1,22 @@
 #!/bin/sh
 
-echo "# Cheat Sheets" > README.md
-echo >> README.md
+dir="$1"
 
-for md in cheatsheets/*; do
-    name=${md:12:((${#md}-15))}
-    url="https://github.com/gabriel376/cheatsheets/blob/master/${name}.md"
-    echo "* [${name}](${url})" >> README.md
+if [[ $# != 1 ]]; then
+    echo "Usage: $0 [path]"
+    exit 1
+fi
+
+if ! [[ -d ${dir} ]]; then
+    echo "${dir} is not a directory"
+    exit 1
+fi
+
+echo "# Cheat Sheets"
+echo
+
+for md in ${dir}/*.md; do
+    name=$(basename ${md})
+    url="https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/${name}.md"
+    echo "* [${name%.md}](${url})"
 done
