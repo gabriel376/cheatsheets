@@ -11,25 +11,44 @@ whereis [command]    # command related files location
 
 ## System Information
 ```Shell
-uname -a        # all system information
-uname -r        # kernel release
-hostname        # host name
+uname -a    # os information
+uname -r    # kernel release
 
-dmesg           # kernel ring buffer
+hostname    # host name
 
-ps              # processes information
-top             # processes information
-htop            # processes information
+dmesg       # kernel ring buffer
 
-uptime          # how long the system has been running
-date            # the current system date and time
+ps          # processes information
+top         # display and manages processes
+htop        # display and manages processes
 
-w               # who is online
-who             # who is current user
+uptime      # how long the system has been running
+date        # current system date and time
 
-df -h           # system disk space usage
-mount           # mount points
-free -m         # amount of free and used memory
+w           # who is online
+who         # who is current user
+
+df -h       # disk space usage
+mount       # mount points
+
+free -m     # free and used memory
+vmstat      # virtual memory statistics
+```
+
+## Hardware Information
+```Shell
+dmidecode    # dmi table decoder
+
+lshw         # hardware information
+hwinfo       # hardware information
+
+lscpu        # cpu information
+lsmem        # memory information
+
+lspci        # pci devices
+lsusb        # usb devices
+lsscsi       # lsscsi devices
+lsblk        # block devices
 ```
 
 ## Shell Redirection
