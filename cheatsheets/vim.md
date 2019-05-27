@@ -61,6 +61,17 @@ ctrl w j       # switch window down
 ctrl w q       # close window
 ```
 
+## Tabs
+```Shell
+:tabedit [path]    # open file in another tab
+:tabs              # list tabs
+:tabclose          # close tab
+
+gT                 # move to previous tab
+gt                 # move to next tab
+[number]gt         # move to tab number
+```
+
 ## Movement
 ```Shell
 k            # cursor down
