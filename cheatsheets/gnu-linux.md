@@ -9,6 +9,29 @@ which [command]      # command location
 whereis [command]    # command related files location
 ```
 
+## System Information
+```Shell
+uname -a        # all system information
+uname -r        # kernel release
+hostname        # host name
+
+dmesg           # kernel ring buffer
+
+ps              # processes information
+top             # processes information
+htop            # processes information
+
+uptime          # how long the system has been running
+date            # the current system date and time
+
+w               # who is online
+who             # who is current user
+
+df -h           # system disk space usage
+mount           # mount points
+free -m         # amount of free and used memory
+```
+
 ## Shell Redirection
 ```Shell
 [command] | [command]    # pipe STDOUT to STDIN
@@ -102,6 +125,11 @@ cat [path] [path]          # concatenate files
 head -n [number] [path]    # print the first n lines
 tail -n [number] [path]    # print the last n lines
 less [path]                # read file with page control
+
+nano [path]                # edit file using nano
+joe [path]                 # edit file using joe
+vim [path]                 # edit file using vim
+emacs -nw [path]           # edit file using emacs
 ```
 
 ## Directories
@@ -131,22 +159,11 @@ ls -lha [path]             # list all using long list and human-readable format
 
 tree [path]                # list files and directories in a tree-like format
 tree -L [number] [path]    # limit tree level
-```
 
-## Text Editors
-```Shell
-nano [path]         # use nano
-joe [path]          # use joe
-vim [path]          # use vim
-emacs -nw [path]    # use emacs
-```
-
-## File Managers
-```Shell
-mc        # use mc
-ranger    # use ranger
-nnn       # use nnn
-vifm      # use vifm
+mc                         # use mc file manager
+ranger                     # use ranger file manager
+nnn                        # use nnn file manager
+vifm                       # use vifm file manager
 ```
 
 ## Search
@@ -154,6 +171,6 @@ vifm      # use vifm
 locate [pattern]               # search file by name using mlocate.db database
 updatedb                       # update database used by locate command
 
-find [path] -name [pattern]    # search files by name in directory
-grep [pattern] -r [path]       # search files by content in directory
+find [path] -name [pattern]    # search files recursively by name in directory
+grep [pattern] -r [path]       # search files recursively by content in directory
 ```
