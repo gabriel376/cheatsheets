@@ -40,11 +40,11 @@ ctrl g       # show buffer information
 ## Multiple Windows
 ```Shell
 :sp [path]     # open buffer and split window horizontally
-:hsplit        # split window horizontally
+:split         # split window horizontally
 ctrl w S       # split window horizontally
 
 :vsp [path]    # open buffer and split window vertically
-:hsplit        # split window horizontally
+:vsplit        # split window vertically
 ctrl w v       # split window vertically
 
 ctrl w <       # decrease window width
