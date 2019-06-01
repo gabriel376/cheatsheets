@@ -17,7 +17,7 @@ dpkg -S [path]            # show which package owns the file
 
 ## apt-get
 ```Shell
-apt-get update                 # update package database
+apt-get update                 # synchronize package index
 apt-get install [package]      # install package
 apt-get upgrade                # upgrade all installed packages
 apt-get remove [package]       # remove package and keep configuration files
@@ -92,9 +92,9 @@ dnf history redo [number]    # redo yum transaction
 
 ## pacman
 ```Shell
-pacman -Syu              # update package list and upgrade all packages
-pacman -Syu [package]    # update package list, upgrade all packages and install package
-pacman -S [package]      # only install package
+pacman -Syu              # synchronize package index and upgrade all packages
+pacman -Syu [package]    # synchronize package index, upgrade all packages and install package
+pacman -S [package]      # install package
 pacman -Rsc [package]    # remove package
 
 pacman -Qe               # list installed packages
@@ -102,4 +102,22 @@ pacman -Ql [package]     # list package files
 pacman -Qii [package]    # show package information
 pacman -Qo [path]        # show which package owns the file
 pacman -Ss [package]     # search package
+```
+
+## xbps
+```Shell
+xbps-install -S              # synchronize package index
+xbps-install -Su             # synchronize package index and update system
+xbps-install -S [package]    # synchronize package index and install package
+
+xbps-remove [package]        # remove package
+xbps-remove -R [package]     # remove package and all unused dependencies
+xbps-remove -o               # remove all package orphans
+
+xbps-query -L                # list repositories and number of available packages
+xbps-query -l                # list installed packages
+xbps-query -Rs [package]     # search packages
+xbps-query -RS [package]     # show package information
+xbps-query -Rx [package]     # list package dependencies
+xbps-query -RX [package]     # list package reverse dependencies
 ```
