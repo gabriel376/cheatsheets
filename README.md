@@ -11,4 +11,5 @@
 * [latex](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/latex.md)
 * [make](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/make.md)
 * [package-manager](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/package-manager.md)
+* [vagrant](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/vagrant.md)
 * [vim](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/vim.md)
