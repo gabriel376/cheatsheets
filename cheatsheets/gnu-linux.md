@@ -193,3 +193,12 @@ updatedb                       # update database used by locate command
 find [path] -name [pattern]    # search files recursively by name in directory
 grep [pattern] -r [path]       # search files recursively by content in directory
 ```
+
+## Diff / Patch
+```Shell
+diff [path] [path]                # show diff between two files
+diff -u [path] [path] > [path]    # create diff file
+
+patch < [path]                    # patch file
+patch -R < [path]                 # revert patch
+```
