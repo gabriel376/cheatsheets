@@ -121,3 +121,39 @@ xbps-query -RS [package]     # show package information
 xbps-query -Rx [package]     # list package dependencies
 xbps-query -RX [package]     # list package reverse dependencies
 ```
+
+## prt-get
+```Shell
+prt-get list                     # list available packages
+prt-get listinst                 # list installed packages
+prt-get listorphans              # list orphans packages
+
+prt-get install [package]        # install package
+prt-get depinst [package]        # install package with dependencies
+prt-get grpinst [package]        # install package, stop if error
+
+prt-get diff                     # show available updates
+prt-get update [package]         # update package
+prt-get sysup                    # update all packages
+
+prt-get lock [package]           # lock package version
+prt-get listlocked               # list locked packages
+
+prt-get search [package]         # seach package
+prt-get dsearch [package]        # seach package in name and description
+prt-get fsearch [path]           # seach path in footprint
+
+prt-get info [package]           # show package information
+prt-get path [package]           # show package path
+prt-get readme [package]         # show package readme
+
+prt-get depends [package]        # show package dependencies
+prt-get deptree [package]        # show package dependencies tree
+prt-get depedent [package]       # show package reverse dependencies
+
+prt-get ls [package]             # list package directory
+prt-get cat [package] [path]     # cat package file
+prt-get edit [package] [path]    # edit package file
+
+prt-get remove [package]         # remove package
+```
