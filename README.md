@@ -1,6 +1,7 @@
 # Cheat Sheets
 
 * [ansible](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/ansible.md)
+* [bash](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/bash.md)
 * [curl-webapps](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/curl-webapps.md)
 * [docker](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/docker.md)
 * [emacs](https://github.com/gabriel376/cheatsheets/blob/master/cheatsheets/emacs.md)
