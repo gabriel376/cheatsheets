@@ -102,9 +102,29 @@ C-g C-/    # redo
 M-w    # copy
 C-w    # cut
 C-y    # yank
+M-y    # cycle
 ```
 
 ## Shell
 ```Shell
 M-! [command]    # run shell command
+```
+
+## Daemon
+```Shell
+emacs --daemon                                # start daemon in background
+emacs --bg-daemon=[name]                      # start named daemon in background
+emacs --fg-daemon=[name]                      # start named daemon in foreground
+
+emacsclient --tty                             # connect to daemon in terminal mode
+emacsclient --tty \                           # connect to named daemon in terminal mode
+            --socket-name=[name]
+
+emacsclient --create-frame                    # connect to daemon in gui mode
+emacsclient --create-frame \                  # connect to named daemon in gui mode
+            --socket-name=[name]
+
+emacsclient -e '(save-buffers-kill-emacs)'    # kill daemon
+emacsclient -e '(save-buffers-kill-emacs)'    # kill named daemon
+            --socket-name=[name]
 ```
