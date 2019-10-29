@@ -23,12 +23,14 @@ Mod Shift c    # close window
 
 ## Tags
 ```Shell
-Mod [1-9]          # view tag
-Mod Tab            # view last tag
-Mod 0              # view all tags
+Mod [1-9]               # view tag
+Mod Ctrl [1-9]          # view tags
+Mod Tab                 # view last tag
+Mod 0                   # view all tags
 
-Mod Shift [1-9]    # set tag to window
-Mod Shift 0        # set all tags to window
+Mod Shift [1-9]         # set tag to window
+Mod Shift Ctrl [1-9]    # add tag to window
+Mod Shift 0             # add all tags to window
 ```
 
 ## Monitors
@@ -45,7 +47,7 @@ Mod Shift .    # move window to next monitor
 Mod t        # tile
 Mod g        # grid
 Mod m        # monocle
-Mod Space    # select previous layout
+Mod Space    # select last layout
 ```
 
 ## Stack
