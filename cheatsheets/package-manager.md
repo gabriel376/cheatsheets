@@ -102,6 +102,7 @@ pacman -Ql [package]     # list package files
 pacman -Qii [package]    # show package information
 pacman -Qo [path]        # show which package owns the file
 pacman -Ss [package]     # search package
+pacman -Fy [name]        # search package by file name
 ```
 
 ## xbps
